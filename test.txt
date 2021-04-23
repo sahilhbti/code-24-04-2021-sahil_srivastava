@@ -1,0 +1,70 @@
+input :
+
+[
+    {"Gender": "Male", "HeightCm": 171, "WeightKg": 84 },
+    { "Gender": "Male", "HeightCm": 161, "WeightKg":85 },
+    { "Gender": "Male", "HeightCm": 180, "WeightKg": 77 },
+     { "Gender": "Female", "HeightCm": 166,"WeightKg": 62},
+    {"Gender": "Female", "HeightCm": 150, "WeightKg": 70},
+     {"Gender": "Female", "HeightCm": 167, "WeightKg": 82}
+     ]
+
+
+output :
+
+{
+    "message": "Computation successfull!",
+    "response": {
+        "body": [
+            {
+                "Gender": "Male",
+                "HeightCm": 171,
+                "WeightKg": 84,
+                "BMI": 28.7,
+                "category": "Overweight",
+                "health_risk": "Enhanced risk"
+            },
+            {
+                "Gender": "Male",
+                "HeightCm": 161,
+                "WeightKg": 85,
+                "BMI": 32.8,
+                "category": "Moderately obese",
+                "health_risk": "Medium risk"
+            },
+            {
+                "Gender": "Male",
+                "HeightCm": 180,
+                "WeightKg": 77,
+                "BMI": 23.8,
+                "category": "Normal weight",
+                "health_risk": "Low risk"
+            },
+            {
+                "Gender": "Female",
+                "HeightCm": 166,
+                "WeightKg": 62,
+                "BMI": 22.5,
+                "category": "Normal weight",
+                "health_risk": "Low risk"
+            },
+            {
+                "Gender": "Female",
+                "HeightCm": 150,
+                "WeightKg": 70,
+                "BMI": 31.1,
+                "category": "Moderately obese",
+                "health_risk": "Medium risk"
+            },
+            {
+                "Gender": "Female",
+                "HeightCm": 167,
+                "WeightKg": 82,
+                "BMI": 29.4,
+                "category": "Overweight",
+                "health_risk": "Enhanced risk"
+            }
+        ],
+        "overweight": 2
+    }
+}
